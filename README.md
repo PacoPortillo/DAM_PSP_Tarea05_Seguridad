@@ -18,11 +18,13 @@ La aplicación se abre en el IDE [NetBeans]
 
 - - -
 #### Sistemas Operativos:
-No hay datos.
+Para Windows y Linux. Aunque todavía no está probado en Linux.
 
 - - -
 ### Desarrollo:
 1. Se inicia el proyecto.
+2. Ejercico 1. Validación de un Login utilizando patrones y guardando los datos de los usuarios validados en un archivo txt.
+3. Añadiendo información a este documento.
 
 _ _ _
 ### Procesos de trabajo:
@@ -40,10 +42,24 @@ La aplicación funcionará siguiendo los siguientes pasos:
 	3.	Los requisitos se deberán indicar a la hora de pedir los datos. En el caso de no cumplirse un patrón deberá mostrarse un mensaje y volver a pedirlo hasta que cumpla los requisitos indicados.
 	El objetivo más importante de la aplicación es realizar la validación de los datos de entrada y el control de excepciones.
 
+3. Ejercicio 1: (Continuación) **Commit**
+Este commit no ha variado el código, tan solo es para definir un poco más de información sobre el proceso a este documento.
+	- Definir un poco más la información de este documento README.
+		- En el proyecto de la aplicación: Se ha creado la siguiente estructura:
+		![img01]
+        - Además en la carpeta PSP_Tarea05_Seguridad\\**readme_ficheros** se encuentra un archivo llamado: **validar_emails.txt**. Este archivo contiene toda la información de como se ha creado el patrón para calidar el email del usuario.
+        - Y dentro del proyecto el programa crea el directorio: PSP_Tarea05_Seguridad\PSP_Tarea05\\**Datos_del_Programa** y el archivo **datos.txt** dónde se guardan los datos de los usuarios.
+
 - - -
 #### Fuentes de información:
 ![ico01]
 https://icons8.com/
+
+La propia unidad del temario: Unidad 5 de PSP – DAM:
+- 20170620-00-DAM(02)\20180205-00-PDFsSegundaEvaluacion\20180205-04-PSP-PDFs\Apuntes\\**PSP-tema05.pdf**
+
+https://amatellanes.wordpress.com/2013/05/29/java-validar-direccion-de-correo-electronico-en-java/
+http://www.forosdelweb.com/f4/necesito-expresion-regular-para-validar-acentos-n-html5-1108258/
 
 - - -
 ### Imágenes:
@@ -71,7 +87,7 @@ martes, 23 de marzo de 2018 19:35
 
 - - -
 ### Fecha de la última actualización:
-sábado, 24 de marzo de 2018 21:40
+domingo, 25 de marzo de 2018 13:01
 
 - - -
 
