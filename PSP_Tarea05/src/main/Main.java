@@ -1,12 +1,9 @@
 package main;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.logging.Level;
-import java.util.logging.Logger;
 import objetos.Usuario;
 import seguridad.ValidaLogin;
+import utilidades.AppLogger;
 import utilidades.Archivos;
 import utilidades.ES;
 
@@ -22,6 +19,8 @@ public class Main {
     public static void main(String[] args) {
         
         Archivos archivos = new Archivos();
+        
+        AppLogger.logger(Level.FINEST, "======================================== Se inicia el proceso de registro de usuario:\n");
         
         String email = "";
         String nombre = "";
@@ -61,8 +60,10 @@ public class Main {
         ES.msg("\n\nDatos del usuario correctos:\n");
         Usuario u = new Usuario(email, nombre, apellidos, phone, fechaNac, cpostal);
         ES.msg(u.toString());
+        AppLogger.logger(Level.CONFIG, "\n\n" + u.toString());
         archivos.escribirDatos(u);
         ES.msg("\nEl usuario ha sido registrado con éxito.\n\n");
+        AppLogger.logger(Level.FINEST, "\nUsuario registrado con éxito.\n");
     }
     
 }

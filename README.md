@@ -25,6 +25,7 @@ Para Windows y Linux. Aunque todavía no está probado en Linux.
 1. Se inicia el proyecto.
 2. Ejercico 1. Validación de un Login utilizando patrones y guardando los datos de los usuarios validados en un archivo txt.
 3. Añadiendo información a este documento.
+4. Añadir una clase Logger que registre el log de la ejecución.
 
 _ _ _
 ### Procesos de trabajo:
@@ -50,6 +51,12 @@ Este commit no ha variado el código, tan solo es para definir un poco más de i
         - Además en la carpeta PSP_Tarea05_Seguridad\\**readme_ficheros** se encuentra un archivo llamado: **validar_emails.txt**. Este archivo contiene toda la información de como se ha creado el patrón para calidar el email del usuario.
         - Y dentro del proyecto el programa crea el directorio: PSP_Tarea05_Seguridad\PSP_Tarea05\\**Datos_del_Programa** y el archivo **datos.txt** dónde se guardan los datos de los usuarios.
 
+4. Ejercicio 2: **Commit**
+Se añade una clase Logger a la aplicación para llevar un control de los eventos importantes que suceden (Ejem: registro del correo electrónico del usuario que utiliza la aplicación, los errores producidos...).
+	* La clase se llama **AppLogger.java**
+	* Los log se guardan en el directorio que crea el programa:
+		* PSP_Tarea05\Datos_de_Logger\\**logger.log**
+
 - - -
 #### Fuentes de información:
 ![ico01]
@@ -60,6 +67,9 @@ La propia unidad del temario: Unidad 5 de PSP – DAM:
 
 https://amatellanes.wordpress.com/2013/05/29/java-validar-direccion-de-correo-electronico-en-java/
 http://www.forosdelweb.com/f4/necesito-expresion-regular-para-validar-acentos-n-html5-1108258/
+https://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html#getLogger(java.lang.String)
+https://javiergarciaescobedo.es/programacion-en-java/28-programacion-estructurada/353-registro-de-traza-de-ejecucion-con-la-clase-logger
+
 
 - - -
 ### Imágenes:
@@ -87,7 +97,7 @@ martes, 23 de marzo de 2018 19:35
 
 - - -
 ### Fecha de la última actualización:
-domingo, 25 de marzo de 2018 13:01
+domingo, 25 de marzo de 2018 20:06
 
 - - -
 

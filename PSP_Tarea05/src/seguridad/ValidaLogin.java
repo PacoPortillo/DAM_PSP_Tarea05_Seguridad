@@ -1,7 +1,9 @@
 package seguridad;
 
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import utilidades.AppLogger;
 
 /**
  *
@@ -22,9 +24,11 @@ public class ValidaLogin {
         
         if(mat.matches()){
             System.out.println("El email es correcto\n");
+            AppLogger.logger(Level.CONFIG, "El email es correcto\n");
             return true;
         } else {
             System.out.println("El email " + email + " es incorrecto\n");
+            AppLogger.logger(Level.FINE, "El email " + email + " es incorrecto\n");
             return false;
         }
         //return mat.matches();
@@ -45,9 +49,11 @@ public class ValidaLogin {
         
         if(mat.matches()){
             System.out.println("El nombre es correcto");
+            AppLogger.logger(Level.CONFIG, "El nombre es correcto");
             b[0] = true;
         } else {
             System.out.println("El nombre " + nombre + " es incorrecto");
+            AppLogger.logger(Level.FINE, "El nombre " + nombre + " es incorrecto");
             b[0] = false;
         }
         
@@ -57,9 +63,11 @@ public class ValidaLogin {
         
         if(mat.matches()){
             System.out.println("Los apellidos son correctos");
+            AppLogger.logger(Level.CONFIG, "Los apellidos son correctos");
             b[1] = true;
         } else {
             System.out.println("Los apellidos " + apellidos + " son incorrectos");
+            AppLogger.logger(Level.FINE, "Los apellidos " + apellidos + " son incorrectos");
             b[1] = false;
         }
         
@@ -69,9 +77,11 @@ public class ValidaLogin {
         
         if(mat.matches()){
             System.out.println("El teléfono es correcto");
+            AppLogger.logger(Level.CONFIG, "El teléfono es correcto");
             b[2] = true;
         } else {
             System.out.println("El teléfono " + phone + " es incorrecto");
+            AppLogger.logger(Level.FINE, "El teléfono " + phone + " es incorrecto");
             b[2] = false;
         }
         
@@ -81,9 +91,11 @@ public class ValidaLogin {
         
         if(mat.matches()){
             System.out.println("La fecha de nacimiento es correcta");
+            AppLogger.logger(Level.CONFIG, "La fecha de nacimiento es correcta");
             b[3] = true;
         } else {
             System.out.println("La fecha de nacimiento " + fechaNac + " es incorrecta");
+            AppLogger.logger(Level.FINE, "La fecha de nacimiento " + fechaNac + " es incorrecta");
             b[3] = false;
         }
         
@@ -93,9 +105,11 @@ public class ValidaLogin {
         
         if(mat.matches()){
             System.out.println("El código postal es correcto");
+            AppLogger.logger(Level.CONFIG, "El código postal es correcto");
             b[4] = true;
         } else {
             System.out.println("El código postal " + cpostal + " es incorrecto");
+            AppLogger.logger(Level.FINE, "El código postal " + cpostal + " es incorrecto");
             b[4] = false;
         }
         

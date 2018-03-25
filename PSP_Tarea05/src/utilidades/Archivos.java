@@ -13,12 +13,19 @@ import objetos.Usuario;
  */
 public class Archivos {
 
-    private final String PATH_DATOS = formatoSO("./Datos_del_Programa/datos.txt");
+    // Se crea el archivo para guardar los datos de los usuarios:
+    private final String PATH_DATOS = Archivos.formatoSO("./Datos_del_Programa/datos.txt");
     private File fdatos;
+    // Se crea el archivo para guardar el logger:
+    private final String PATH_LOGGER = Archivos.formatoSO("./Datos_de_Logger/logger.log");
+    private File fLogger;
 
     public Archivos() {
         fdatos = new File(PATH_DATOS);
         creaDirectorios(fdatos);
+        
+        fLogger = new File(PATH_LOGGER);
+        creaDirectorios(fLogger);
     }
     
     
@@ -78,7 +85,7 @@ public class Archivos {
      * @return la Ruta formateada en caso de que la ejecución se realice desde
      * Windows
      */
-    private String formatoSO(String ruta) {
+    public static String formatoSO(String ruta) {
         String separador;
 
         try {
