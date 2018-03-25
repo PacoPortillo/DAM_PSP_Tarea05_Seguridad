@@ -1,3 +1,6 @@
+mar 25, 2018 7:35:21 PM utilidades.AppLogger logger
+CONFIGURAR: 
+
 
 Usuario:
 	Email : auntonio@test.com
@@ -7,12 +10,7 @@ Usuario:
 	Fecha de nacimiento : 02/58/1589
 	Código Postal : 25896.
 
-
-Usuario:
-	Email : uss@tes.es
-	Nombre : pas
-	Apellidos : pas
-	Teléfono : 123/123/123
-	Fecha de nacimiento : 02/25/5896
-	Código Postal : 25896.
+mar 25, 2018 7:35:21 PM utilidades.AppLogger logger
+MÁS DETALLADO: 
+Usuario registrado con éxito.
 
