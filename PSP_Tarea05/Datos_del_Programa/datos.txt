@@ -1,0 +1,27 @@
+
+Usuario:
+	Email : paco@test.es
+	Nombre : Paco
+	Apellidos : Portillo
+	Teléfono : 123/123/123
+	Fecha de nacimiento : 06/11/1969
+	Código Postal : 29002.
+
+
+Usuario:
+	Email : juan@test.es
+	Nombre : Juan Ramos
+	Apellidos : Díaz Nuñez
+	Teléfono : 123/123/589
+	Fecha de nacimiento : 06/11/1969
+	Código Postal : 47009.
+
+
+Usuario:
+	Email : emilio@test.es
+	Nombre : Emilio
+	Apellidos : Díaz
+	Teléfono : 456/856/895
+	Fecha de nacimiento : 12/12/1995
+	Código Postal : 29006.
+

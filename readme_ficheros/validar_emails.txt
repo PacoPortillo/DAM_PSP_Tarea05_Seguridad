@@ -1,0 +1,48 @@
+Validación del email:
+
+Reglas de formato:
+
+Formato: usuario@servidor.dominio
+
+usuario: máximo 8 caracteres, letras, números o '_' Primer carácter siempre letra minúscula.
+servidor: cadena formada por letras y numeros 
+dominio: máximo 3 caracteres (entendiendo por caracteres sólo las letras) (por tanto sólo admite un primer dominio de nivel superior)
+
+
+
+
+Posibles emails para probar:
+
+Emails que deben ser correctos:
+
+antonios@test.com
+antonio@test.com
+antonio@test.es
+antonio@test.u
+antonio@test2test.com
+ant_onio@test.com
+aNT_onio@test.com
+antonio@TEST.com
+antonio@TEST.COM
+aNTONIOS@TEST.ES
+
+Emails que no pueden ser correctos:
+
++antonio@test.com
+_antonio@test.com
+Antonio@test.com
+2ntonio@test.com
+ antonio@test.com
+antonioss@test.u
+antonios@test.
+antonios@test
+antonios@test.info
+antonios@test.c2m
+antonios@test.c_m
+antonio@test.com.uk
+antonio@test..uk
+antonio@test_test.com
+antonio@@test.com
+antoniotest.com
+antonio@.test.com
+ant.onio@test.com
