@@ -26,6 +26,7 @@ Para Windows y Linux. Aunque todavía no está probado en Linux.
 2. Ejercico 1. Validación de un Login utilizando patrones y guardando los datos de los usuarios validados en un archivo txt.
 3. Añadiendo información a este documento.
 4. Añadir una clase Logger que registre el log de la ejecución.
+5. Clase **JUnit** para testear la clase seguridad.**ValidaLogin.java**
 
 _ _ _
 ### Procesos de trabajo:
@@ -57,6 +58,10 @@ Se añade una clase Logger a la aplicación para llevar un control de los evento
 	* Los log se guardan en el directorio que crea el programa:
 		* PSP_Tarea05\Datos_de_Logger\\**logger.log**
 
+5. Se crea una clase de Test JUnit para realizar pruebas unitarias de la clase seguridad.**ValidaLogin.java**, realizando una ejecución controlada parametrizada para evaluar el funcionamiento de los dos métodos de la clase y comprobar que se obtiene el resultado esperado.
+Las pruebas se realizan parametrizando con una cantidad amplia de valores la clase JUnit:
+![img02]
+
 - - -
 #### Fuentes de información:
 ![ico01]
@@ -70,6 +75,8 @@ http://www.forosdelweb.com/f4/necesito-expresion-regular-para-validar-acentos-n-
 https://docs.oracle.com/javase/7/docs/api/java/util/logging/Logger.html#getLogger(java.lang.String)
 https://javiergarciaescobedo.es/programacion-en-java/28-programacion-estructurada/353-registro-de-traza-de-ejecucion-con-la-clase-logger
 
+Mis propios trabajos en DAM en Entornos de Desarrollo:
+- 20160727-00-DAM(01)\20161001-03-ED-EntornosDesarrollo\20161222-00-ED03_Tarea-Debug_JUnit\Sanchez_Portillo_JFran_ED03_Tarea_E1\\**Sanchez_Portillo_JFran_ED03_Tarea_E1.pdf**
 
 - - -
 ### Imágenes:
@@ -97,12 +104,13 @@ martes, 23 de marzo de 2018 19:35
 
 - - -
 ### Fecha de la última actualización:
-domingo, 25 de marzo de 2018 20:06
+lunes, 26 de marzo de 2018 11:56
 
 - - -
 
 [ico01]: ./readme_imagenes/icono_40.png
 [img01]: ./readme_imagenes/img01.jpg
+[img02]: ./readme_imagenes/img02.jpg
 
 
 [Java]: https://www.java.com/
