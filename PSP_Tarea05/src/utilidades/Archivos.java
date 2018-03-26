@@ -8,8 +8,14 @@ import java.io.PrintWriter;
 import objetos.Usuario;
 
 /**
- *
- * @author Admin
+ * <p>Esta clase tiene por función todo el proceso realzado con los archivos.
+ * <br>Tiene tres métodos:</p>
+ * <ol>
+ * <li>Método: formatoSO(String ruta) esté método devuelve la ruta de los archivos en función del Sistema Operativo.</li>
+ * <li>Método: creaDirectorios(File file) este método crea los directorios y/o archivos necesarios si no existen. Si existen informa de que están preparados.</li>
+ * <li>Método: escribirDatos(Usuario usuario) este método escribe los datos de un nuevo usuario en el archivo Datos_del_Programa/datos.txt</li>
+ * </ol>
+ * @author José Francisco Sánchez Portillo
  */
 public class Archivos {
 
@@ -20,16 +26,23 @@ public class Archivos {
     private final String PATH_LOGGER = Archivos.formatoSO("./Datos_de_Logger/logger.log");
     private File fLogger;
 
+    /**
+     * Método constructor crea los archivos y directorios necesarios para la ejecución de la aplicación.
+     */
     public Archivos() {
+        // Crear los archivos/ directorios si no estuvieran creados
         fdatos = new File(PATH_DATOS);
         creaDirectorios(fdatos);
-        
+        // Crear los archivos/ directorios si no estuvieran creados
         fLogger = new File(PATH_LOGGER);
         creaDirectorios(fLogger);
     }
     
-    
-
+    /**
+     * Método para escribir los datos del nuevo usuario.
+     * 
+     * @param usuario Se pasa la instancia del objeto Usuario para registrarlo en el archivo Datos_del_Programa/datos.txt
+     */
     public void escribirDatos(Usuario usuario) {
         try {
             FileWriter fw = new FileWriter(fdatos, true);
@@ -46,12 +59,6 @@ public class Archivos {
         }
     }
 
-    /**
-     * Crea los directorios necesarios para poder crear el archivo que servirá
-     * de Almacén de la aplicación.
-     *
-     * @param file Ruta donde va a estar el archivo que va a sevir de Almacen.
-     */
     /**
      * Crear los directorios necesarios para poder crear el archivo que es
      * pasado por parámetro.

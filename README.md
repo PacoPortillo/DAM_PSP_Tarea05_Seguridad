@@ -14,11 +14,14 @@ Curso académico: 2017-2018
 [TOC]
 
 ### Cómo usar la aplicación:
-La aplicación se abre en el IDE [NetBeans]
+La aplicación se abre en el IDE [NetBeans] y se ejecuta en la consola del IDE. 
+También puede ejecutarse abriendo una consola desde la ubicación:
+* PSP_Tarea05_Seguridad\PSP_Tarea05\dist\ y ejecutando:
+	* java -jar PSP_Tarea05.jar
 
 - - -
 #### Sistemas Operativos:
-Para Windows y Linux. Aunque todavía no está probado en Linux.
+Para Windows y Linux.
 
 - - -
 ### Desarrollo:
@@ -27,6 +30,7 @@ Para Windows y Linux. Aunque todavía no está probado en Linux.
 3. Añadiendo información a este documento.
 4. Añadir una clase Logger que registre el log de la ejecución.
 5. Clase **JUnit** para testear la clase seguridad.**ValidaLogin.java**
+6. Crear el Javadoc con toda la documentación del programa.
 
 _ _ _
 ### Procesos de trabajo:
@@ -62,6 +66,9 @@ Se añade una clase Logger a la aplicación para llevar un control de los evento
 Las pruebas se realizan parametrizando con una cantidad amplia de valores la clase JUnit:
 ![img02]
 
+6. Se crea el Javadoc con toda la documentación del programa. El Javaoc se encuentra en:
+* PSP_Tarea05_Seguridad\PSP_Tarea05\dist\javadoc\\**index.html**
+
 - - -
 #### Fuentes de información:
 ![ico01]
@@ -88,7 +95,7 @@ No hay datos.
 
 - - -
 ### Instalación:
-No hay datos.
+Esta aplicación no requere instalación. Para más información ver en este documento "Cómo usar la aplicación".
 
 - - -
 ### Entorno de desarrollo
@@ -104,7 +111,7 @@ martes, 23 de marzo de 2018 19:35
 
 - - -
 ### Fecha de la última actualización:
-lunes, 26 de marzo de 2018 11:56
+lunes, 26 de marzo de 2018 14:11
 
 - - -
 

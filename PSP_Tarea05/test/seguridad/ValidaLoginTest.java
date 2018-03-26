@@ -12,8 +12,8 @@ import org.junit.runners.Parameterized;
 import org.junit.runners.Parameterized.Parameters;
 
 /**
- *
- * @author Admin
+ * Clase parametrizada con valores para medir los resultados de la clase {@link ValidaLogin}
+ * @author José Francisco Sánchez Portillo
  */
 @RunWith(value = Parameterized.class)
 public class ValidaLoginTest {
@@ -25,6 +25,10 @@ public class ValidaLoginTest {
     private final boolean email_result;
     private final boolean [] user_result = new boolean[5];
     
+    /**
+     * Datos disponibles para evaluar, se escribe el dato y se aporta el resultado.
+     * @return para cada ejecución una serie de valores que pueden ser los datos de un usuario.
+     */
     @Parameters
     public static Iterable<Object[]> getData(){
         return Arrays.asList(new Object[][]{
@@ -60,6 +64,21 @@ public class ValidaLoginTest {
     }
 
 
+    /**
+     * Constructor que va recibiendo los valores parametrizados una línea en cada ejecución.
+     * @param email Email para evaluar.
+     * @param email_result Resultado esperado de Email.
+     * @param nombre Nombre para evaluar.
+     * @param apellidos Apellidos para evaluar.
+     * @param phone Teléfono para evaluar.
+     * @param fechaNac Fecha de Nacimiento para evaluar.
+     * @param cpostal Código Postal para evaluar.
+     * @param user_result00 Resultado esperado de Nombre.
+     * @param user_result01 Resultado esperado de Apellidos.
+     * @param user_result02 Resultado esperado de Teléfono.
+     * @param user_result03 Resultado esperado de Fecha de Nacimiento.
+     * @param user_result04  Resultado esperado de Código Postal.
+     */
     public ValidaLoginTest(String email, boolean email_result, String nombre, String apellidos, String phone, String fechaNac, int cpostal, 
             boolean user_result00, boolean user_result01, boolean user_result02, boolean user_result03, boolean user_result04) {
         this.email = email;

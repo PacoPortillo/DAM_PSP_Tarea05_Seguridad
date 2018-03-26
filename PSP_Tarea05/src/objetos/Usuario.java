@@ -1,8 +1,17 @@
 package objetos;
 
 /**
- *
- * @author Admin
+ * Crea un Usuario para la aplicación:
+ * <p>Este usuario contiene:</p>
+ * <ol>
+ * <li>Email</li>
+ * <li>Nombre</li>
+ * <li>Apellidos</li>
+ * <li>Teléfono</li>
+ * <li>Fecha de nacimiento</li>
+ * <li>Código Postal</li></ol>
+ * 
+ * @author José Francisco Sánchez Portillo
  */
 public class Usuario {
     
@@ -13,6 +22,7 @@ public class Usuario {
     private String fechaNac;
     private int cpostal;
 
+    // Constructor
     public Usuario(String email, String nombre, String apellidos, String phone, String fechaNac, int cpostal) {
         this.email = email;
         this.nombre = nombre;
@@ -22,6 +32,7 @@ public class Usuario {
         this.cpostal = cpostal;
     }
 
+    // Getters & Setters
     public String getEmail() {
         return email;
     }
@@ -70,6 +81,10 @@ public class Usuario {
         this.cpostal = cpostal;
     }
 
+    /**
+     * Méodo toString del Usuario.
+     * @return Los valores del usuario listos para imprimir.
+     */
     @Override
     public String toString() {
         return "\nUsuario:\n\t" + "Email : " + email + "\n\tNombre : " + nombre 

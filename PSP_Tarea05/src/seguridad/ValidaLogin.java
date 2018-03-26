@@ -6,14 +6,31 @@ import java.util.regex.Pattern;
 import utilidades.AppLogger;
 
 /**
- *
- * @author Admin
+ * <p>Clase que valida los datos de los {@link objetos.Usuario}<br>
+ * Contiene dos métodos:</p>
+ * <ol>
+ * <li>Método val_email: sirve para validar el email.</li>
+ * <li>Método val_usuario: sirve para validar el resto de los datos del usuario.</li>
+ * </ol>
+ * 
+ * @author José Francisco Sánchez Portillo
  */
 public class ValidaLogin {
     
     private Pattern pat = null;
     private Matcher mat = null;
     
+    /**
+     * Este método valida un Email como correcto en base a un patrón.
+     * Reglas de formato:
+     * Formato: usuario@servidor.dominio
+     * usuario: máximo 8 caracteres, letras, números o '_' Primer carácter siempre letra minúscula.
+     * servidor: cadena formada por letras y numeros 
+     * dominio: máximo 3 caracteres (entendiendo por caracteres sólo las letras) (por tanto sólo admite un primer dominio de nivel superior)
+     * 
+     * @param email recibe por parámetro el Email introducido por el usuario
+     * @return true si el email es correcto y false si no lo es.
+     */
     public boolean val_email(String email){
         
         //String patron = "^[a-z]+(\\.[_A-Za-z0-9-]+)*@[A-Za-z0-9-]+(\\.[A-Za-z0-9]+)*(\\.[A-Za-z]{2,})$";
@@ -34,6 +51,22 @@ public class ValidaLogin {
         //return mat.matches();
     }
     
+    /**
+     * Este método valida los datos como correctos en base a unos patrones.
+     * Reglas de formato:
+     * Nombre y Apellidos: cadena de caracteres que puede incluir el espacio y una longitud máxima de 15.
+     * Teléfono: 999/999/999.
+     * Fecha de nacimiento: la fecha será correcta según el formato dd/mm/yyyy.
+     * Código postal: 99999
+     * 
+     * @param nombre recibe por parámetro el nombre introducido por el usuario
+     * @param apellidos recibe por parámetro los apellidos introducidos por el usuario
+     * @param phone recibe por parámetro el teléfono introducido por el usuario
+     * @param fechaNac recibe por parámetro la fecha de nacimiento introducida por el usuario
+     * @param cpostal recibe por parámetro el Código Postal introducido por el usuario
+     * @return un Array de tipo boolean con True si ha sido correcto el dato y False si no lo ha sido,
+     * siendo la posición del array: 0 nombre, 1 apellidos, 2 teléfono, 3 fechaNacimeinto y 4 códigoPostal.
+     */
     public boolean[] val_usuario(String nombre, String apellidos, String phone, String fechaNac, int cpostal){
         
         boolean[] b = new boolean[5];
