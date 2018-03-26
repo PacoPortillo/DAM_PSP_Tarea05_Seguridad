@@ -19,6 +19,11 @@ También puede ejecutarse abriendo una consola desde la ubicación:
 * PSP_Tarea05_Seguridad\PSP_Tarea05\dist\ y ejecutando:
 	* java -jar PSP_Tarea05.jar
 
+Se pueden borrar los siguientes directorios con su contenido para realizar una **ejecución desde cero**:
+
+- Datos_de_Logger
+- Datos_del_Programa
+
 - - -
 #### Sistemas Operativos:
 Para Windows y Linux.
@@ -31,7 +36,7 @@ Para Windows y Linux.
 4. Añadir una clase Logger que registre el log de la ejecución.
 5. Clase **JUnit** para testear la clase seguridad.**ValidaLogin.java**
 6. Crear el Javadoc con toda la documentación del programa.
-
+7. **V1.0.0** - Aplicación terminada.
 _ _ _
 ### Procesos de trabajo:
 1. Se incia el proyecto. **Commit**
@@ -67,7 +72,9 @@ Las pruebas se realizan parametrizando con una cantidad amplia de valores la cla
 ![img02]
 
 6. Se crea el Javadoc con toda la documentación del programa. El Javaoc se encuentra en:
-* PSP_Tarea05_Seguridad\PSP_Tarea05\dist\javadoc\\**index.html**
+	* PSP_Tarea05_Seguridad\PSP_Tarea05\dist\javadoc\\**index.html**
+
+7. Últimas comprobaciones: Lanzamiento de la V1.0.0. **Commit**
 
 - - -
 #### Fuentes de información:
@@ -107,11 +114,11 @@ Esta aplicación se ofrece bajo licencia [Creative Commons Attribution 4.0].
 
 - - -
 ### Fecha de creacción del proyecto:
-martes, 23 de marzo de 2018 19:35
+viernes, 23 de marzo de 2018 19:35
 
 - - -
 ### Fecha de la última actualización:
-lunes, 26 de marzo de 2018 14:11
+lunes, 26 de marzo de 2018 17:02
 
 - - -
 
